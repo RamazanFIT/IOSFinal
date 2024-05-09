@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F4857CB28BFAACF00BD5BEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4857CA28BFAACF00BD5BEE /* AppDelegate.swift */; };
+		5F4857CD28BFAACF00BD5BEE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4857CC28BFAACF00BD5BEE /* SceneDelegate.swift */; };
+		5F4857CF28BFAACF00BD5BEE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4857CE28BFAACF00BD5BEE /* MainViewController.swift */; };
+		5F4857D228BFAACF00BD5BEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F4857D028BFAACF00BD5BEE /* Main.storyboard */; };
+		5F4857D428BFAAD000BD5BEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F4857D328BFAAD000BD5BEE /* Assets.xcassets */; };
+		5F4857D728BFAAD000BD5BEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F4857D528BFAAD000BD5BEE /* LaunchScreen.storyboard */; };
+		5F4857DF28C24C4700BD5BEE /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 5F4857DE28C24C4700BD5BEE /* readme.md */; };
+		5F48581528C5E62800BD5BEE /* Tetromino.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F48581428C5E62800BD5BEE /* Tetromino.swift */; };
+		5F48581728C5E69900BD5BEE /* GameServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F48581628C5E69900BD5BEE /* GameServiceProtocol.swift */; };
+		5F48581928C5E6D700BD5BEE /* GameService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F48581828C5E6D700BD5BEE /* GameService.swift */; };
+		5F48581F28C64DA400BD5BEE /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F48581E28C64DA400BD5BEE /* Board.swift */; };
+		5F48582E28C733A600BD5BEE /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F48582D28C733A600BD5BEE /* ServiceLocator.swift */; };
+		5F48583328C7466200BD5BEE /* TimerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F48583228C7466200BD5BEE /* TimerService.swift */; };
+		5F48583528C7468200BD5BEE /* TimerServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F48583428C7468200BD5BEE /* TimerServiceProtocol.swift */; };
+		5F48583728C7720700BD5BEE /* BoardServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F48583628C7720700BD5BEE /* BoardServiceProtocol.swift */; };
+		5F48583928C7723800BD5BEE /* BoardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F48583828C7723800BD5BEE /* BoardService.swift */; };
+		5F48583F28C89B2E00BD5BEE /* TetrominoHelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F48583E28C89B2E00BD5BEE /* TetrominoHelperProtocol.swift */; };
+		5F48584328C89B9E00BD5BEE /* TetrominoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F48584228C89B9E00BD5BEE /* TetrominoHelper.swift */; };
+		5F5332D528CF232F00293DDA /* ViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5332D428CF232F00293DDA /* ViewControllerExtensions.swift */; };
+		5F5332D728CF23DC00293DDA /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5332D628CF23DC00293DDA /* BoardViewController.swift */; };
+		5F5332D828CF604200293DDA /* Abang.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5F3A183928CDCF4D005B7730 /* Abang.otf */; };
+		5F7F006E28D09EE500CEDD1C /* NextTetrominoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F006D28D09EE500CEDD1C /* NextTetrominoViewController.swift */; };
+		5F7F007028D0A2B400CEDD1C /* StoreKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F006F28D0A2B400CEDD1C /* StoreKeys.swift */; };
+		5F7F007728D0A5ED00CEDD1C /* ColorKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F007628D0A5ED00CEDD1C /* ColorKeys.swift */; };
+		5FA2A6CA28CCD83E00BFCBC2 /* MovementDirectionEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA2A6C928CCD83E00BFCBC2 /* MovementDirectionEnum.swift */; };
+		5FA2A6CC28CDBE2500BFCBC2 /* ViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA2A6CB28CDBE2500BFCBC2 /* ViewHelper.swift */; };
+		5FED985F28D06DFF00F65E94 /* TetrominoDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FED985E28D06DFF00F65E94 /* TetrominoDrawer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5F48580C28C3A52100BD5BEE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5F3A183928CDCF4D005B7730 /* Abang.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Abang.otf; sourceTree = "<group>"; };
+		5F4857C728BFAACF00BD5BEE /* Tetris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tetris.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4857CA28BFAACF00BD5BEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5F4857CC28BFAACF00BD5BEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5F4857CE28BFAACF00BD5BEE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		5F4857D128BFAACF00BD5BEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5F4857D328BFAAD000BD5BEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5F4857D628BFAAD000BD5BEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5F4857D828BFAAD000BD5BEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F4857DE28C24C4700BD5BEE /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		5F48581428C5E62800BD5BEE /* Tetromino.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tetromino.swift; sourceTree = "<group>"; };
+		5F48581628C5E69900BD5BEE /* GameServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameServiceProtocol.swift; sourceTree = "<group>"; };
+		5F48581828C5E6D700BD5BEE /* GameService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameService.swift; sourceTree = "<group>"; };
+		5F48581E28C64DA400BD5BEE /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		5F48582D28C733A600BD5BEE /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
+		5F48583228C7466200BD5BEE /* TimerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerService.swift; sourceTree = "<group>"; };
+		5F48583428C7468200BD5BEE /* TimerServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerServiceProtocol.swift; sourceTree = "<group>"; };
+		5F48583628C7720700BD5BEE /* BoardServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardServiceProtocol.swift; sourceTree = "<group>"; };
+		5F48583828C7723800BD5BEE /* BoardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardService.swift; sourceTree = "<group>"; };
+		5F48583E28C89B2E00BD5BEE /* TetrominoHelperProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TetrominoHelperProtocol.swift; sourceTree = "<group>"; };
+		5F48584228C89B9E00BD5BEE /* TetrominoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TetrominoHelper.swift; sourceTree = "<group>"; };
+		5F5332D428CF232F00293DDA /* ViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtensions.swift; sourceTree = "<group>"; };
+		5F5332D628CF23DC00293DDA /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
+		5F7F006D28D09EE500CEDD1C /* NextTetrominoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextTetrominoViewController.swift; sourceTree = "<group>"; };
+		5F7F006F28D0A2B400CEDD1C /* StoreKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKeys.swift; sourceTree = "<group>"; };
+		5F7F007628D0A5ED00CEDD1C /* ColorKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorKeys.swift; sourceTree = "<group>"; };
+		5FA2A6C928CCD83E00BFCBC2 /* MovementDirectionEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementDirectionEnum.swift; sourceTree = "<group>"; };
+		5FA2A6CB28CDBE2500BFCBC2 /* ViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHelper.swift; sourceTree = "<group>"; };
+		5FED985E28D06DFF00F65E94 /* TetrominoDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TetrominoDrawer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F4857C428BFAACF00BD5BEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F3A183828CDCF39005B7730 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				5F3A183928CDCF4D005B7730 /* Abang.otf */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		5F4857BE28BFAACF00BD5BEE = {
+			isa = PBXGroup;
+			children = (
+				5F4857DE28C24C4700BD5BEE /* readme.md */,
+				5F4857C928BFAACF00BD5BEE /* Tetris */,
+				5F4857C828BFAACF00BD5BEE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5F4857C828BFAACF00BD5BEE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F4857C728BFAACF00BD5BEE /* Tetris.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F4857C928BFAACF00BD5BEE /* Tetris */ = {
+			isa = PBXGroup;
+			children = (
+				5F4857CA28BFAACF00BD5BEE /* AppDelegate.swift */,
+				5F4857CC28BFAACF00BD5BEE /* SceneDelegate.swift */,
+				5F4857EC28C3A37000BD5BEE /* Model */,
+				5F4857E428C3985900BD5BEE /* View */,
+				5F4857E528C3986A00BD5BEE /* Controller */,
+				5F4857EA28C3A34D00BD5BEE /* Service */,
+				5F48582F28C733B300BD5BEE /* Utils */,
+				5F7F007128D0A2B800CEDD1C /* Keys */,
+				5F3A183828CDCF39005B7730 /* Assets */,
+				5F4857D328BFAAD000BD5BEE /* Assets.xcassets */,
+				5F4857D528BFAAD000BD5BEE /* LaunchScreen.storyboard */,
+				5F4857D828BFAAD000BD5BEE /* Info.plist */,
+			);
+			path = Tetris;
+			sourceTree = "<group>";
+		};
+		5F4857E428C3985900BD5BEE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5F4857D028BFAACF00BD5BEE /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5F4857E528C3986A00BD5BEE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5F4857CE28BFAACF00BD5BEE /* MainViewController.swift */,
+				5F5332D628CF23DC00293DDA /* BoardViewController.swift */,
+				5F7F006D28D09EE500CEDD1C /* NextTetrominoViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5F4857EA28C3A34D00BD5BEE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5F48581628C5E69900BD5BEE /* GameServiceProtocol.swift */,
+				5F48581828C5E6D700BD5BEE /* GameService.swift */,
+				5F48583228C7466200BD5BEE /* TimerService.swift */,
+				5F48583428C7468200BD5BEE /* TimerServiceProtocol.swift */,
+				5F48583628C7720700BD5BEE /* BoardServiceProtocol.swift */,
+				5F48583828C7723800BD5BEE /* BoardService.swift */,
+				5F48583E28C89B2E00BD5BEE /* TetrominoHelperProtocol.swift */,
+				5F48584228C89B9E00BD5BEE /* TetrominoHelper.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		5F4857EC28C3A37000BD5BEE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5F48581428C5E62800BD5BEE /* Tetromino.swift */,
+				5F48581E28C64DA400BD5BEE /* Board.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5F48582F28C733B300BD5BEE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5FA2A6C928CCD83E00BFCBC2 /* MovementDirectionEnum.swift */,
+				5F48582D28C733A600BD5BEE /* ServiceLocator.swift */,
+				5FA2A6CB28CDBE2500BFCBC2 /* ViewHelper.swift */,
+				5F5332D428CF232F00293DDA /* ViewControllerExtensions.swift */,
+				5FED985E28D06DFF00F65E94 /* TetrominoDrawer.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5F7F007128D0A2B800CEDD1C /* Keys */ = {
+			isa = PBXGroup;
+			children = (
+				5F7F006F28D0A2B400CEDD1C /* StoreKeys.swift */,
+				5F7F007628D0A5ED00CEDD1C /* ColorKeys.swift */,
+			);
+			path = Keys;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F4857C628BFAACF00BD5BEE /* Tetris */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F4857DB28BFAAD000BD5BEE /* Build configuration list for PBXNativeTarget "Tetris" */;
+			buildPhases = (
+				5F4857C328BFAACF00BD5BEE /* Sources */,
+				5F4857C428BFAACF00BD5BEE /* Frameworks */,
+				5F4857C528BFAACF00BD5BEE /* Resources */,
+				5F48580C28C3A52100BD5BEE /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tetris;
+			productName = Tetris;
+			productReference = 5F4857C728BFAACF00BD5BEE /* Tetris.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F4857BF28BFAACF00BD5BEE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					5F4857C628BFAACF00BD5BEE = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 5F4857C228BFAACF00BD5BEE /* Build configuration list for PBXProject "Tetris" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5F4857BE28BFAACF00BD5BEE;
+			productRefGroup = 5F4857C828BFAACF00BD5BEE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F4857C628BFAACF00BD5BEE /* Tetris */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F4857C528BFAACF00BD5BEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F4857D728BFAAD000BD5BEE /* LaunchScreen.storyboard in Resources */,
+				5F4857D428BFAAD000BD5BEE /* Assets.xcassets in Resources */,
+				5F5332D828CF604200293DDA /* Abang.otf in Resources */,
+				5F4857DF28C24C4700BD5BEE /* readme.md in Resources */,
+				5F4857D228BFAACF00BD5BEE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F4857C328BFAACF00BD5BEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FED985F28D06DFF00F65E94 /* TetrominoDrawer.swift in Sources */,
+				5F4857CF28BFAACF00BD5BEE /* MainViewController.swift in Sources */,
+				5F7F006E28D09EE500CEDD1C /* NextTetrominoViewController.swift in Sources */,
+				5FA2A6CA28CCD83E00BFCBC2 /* MovementDirectionEnum.swift in Sources */,
+				5F48581F28C64DA400BD5BEE /* Board.swift in Sources */,
+				5F48583328C7466200BD5BEE /* TimerService.swift in Sources */,
+				5F48582E28C733A600BD5BEE /* ServiceLocator.swift in Sources */,
+				5F48581728C5E69900BD5BEE /* GameServiceProtocol.swift in Sources */,
+				5F5332D528CF232F00293DDA /* ViewControllerExtensions.swift in Sources */,
+				5F7F007028D0A2B400CEDD1C /* StoreKeys.swift in Sources */,
+				5F4857CB28BFAACF00BD5BEE /* AppDelegate.swift in Sources */,
+				5F48583528C7468200BD5BEE /* TimerServiceProtocol.swift in Sources */,
+				5F7F007728D0A5ED00CEDD1C /* ColorKeys.swift in Sources */,
+				5F48583728C7720700BD5BEE /* BoardServiceProtocol.swift in Sources */,
+				5F48584328C89B9E00BD5BEE /* TetrominoHelper.swift in Sources */,
+				5F5332D728CF23DC00293DDA /* BoardViewController.swift in Sources */,
+				5F48581928C5E6D700BD5BEE /* GameService.swift in Sources */,
+				5FA2A6CC28CDBE2500BFCBC2 /* ViewHelper.swift in Sources */,
+				5F4857CD28BFAACF00BD5BEE /* SceneDelegate.swift in Sources */,
+				5F48583F28C89B2E00BD5BEE /* TetrominoHelperProtocol.swift in Sources */,
+				5F48581528C5E62800BD5BEE /* Tetromino.swift in Sources */,
+				5F48583928C7723800BD5BEE /* BoardService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5F4857D028BFAACF00BD5BEE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F4857D128BFAACF00BD5BEE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5F4857D528BFAAD000BD5BEE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F4857D628BFAAD000BD5BEE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5F4857D928BFAAD000BD5BEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5F4857DA28BFAAD000BD5BEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5F4857DC28BFAAD000BD5BEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7C8TTKK2U7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Tetris/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dias.tetris;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5F4857DD28BFAAD000BD5BEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7C8TTKK2U7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Tetris/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dias.tetris;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F4857C228BFAACF00BD5BEE /* Build configuration list for PBXProject "Tetris" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F4857D928BFAAD000BD5BEE /* Debug */,
+				5F4857DA28BFAAD000BD5BEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F4857DB28BFAAD000BD5BEE /* Build configuration list for PBXNativeTarget "Tetris" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F4857DC28BFAAD000BD5BEE /* Debug */,
+				5F4857DD28BFAAD000BD5BEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F4857BF28BFAACF00BD5BEE /* Project object */;
+}
